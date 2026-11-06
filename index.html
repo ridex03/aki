@@ -369,7 +369,7 @@ window.AKI_RULES = {
   pre_v:  {why:'ПРЕ- = «очень»: прекрасный, премилый, пренеприятный.', short:'приставка ПРЕ- имеет значение «очень»'},
   pre_p:  {why:'ПРЕ- близка к ПЕРЕ-: преградить = перегородить, прервать = перервать.', short:'приставка ПРЕ- близка по значению к ПЕРЕ-'},
   pri:    {why:'ПРИ- = приближение, присоединение, близость или неполнота действия: приехать, пришить, приморский, приоткрыть.', short:'приставка ПРИ- обозначает приближение, присоединение, близость или неполноту действия'},
-  dict:   {why:'Словарное слово: приставку не выделить, написание просто запоминаем.', short:'словарное слово, написание нужно запомнить'},
+  dict:   {why:'В этом слове написание нужно запомнить или проверить по словарю.', short:'написание нужно запомнить'},
   hard:   {why:'Разделительный Ъ пишется после приставки на согласный перед Е, Ё, Ю, Я (подъезд, объявление), в сложных словах с числительными (трёхъярусный) и в иностранных словах (адъютант, инъекция).', short:'разделительный Ъ пишется после приставки перед Е, Ё, Ю, Я'},
   soft:   {why:'Разделительный Ь пишется внутри корня, не после приставки: вьюга, серьёзный, пьеса; в иностранных словах перед О: бульон, компаньон.', short:'разделительный Ь пишется внутри корня'},
   y:      {why:'После русских приставок на согласный И меняется на Ы: предыстория, сыграть, розыгрыш.', short:'после приставки на согласный И меняется на Ы'},
@@ -408,21 +408,21 @@ window.AKI_MODULES = [
   sections:[
    {id:'noun', title:'Существительные', color:'#7C5CFF', units:[
     'аэропОрты бАнты бОроду бухгАлтеров вероисповЕдание водопровОд газопровОд граждАнство дефИс дешевИзна диспансЕр',
-    'договорЁнность докумЕнт жалюзИ знАчимость Иксы каталОг квартАл киломЕтр кОнусы корЫсть крАны',
-    'кремЕнь лЕкторов лыжнЯ мЕстностей мусоропровОд намЕрение нарОст нЕдруг недУг некролОг ненАвисть',
+    'договорЁнность докумЕнт жалюзИ знАчимость Иксы каталОг квартАл киломЕтр кОнусов корЫсть крАны',
+    'кремЕнь лЕкторов лыжнЯ мЕстностей досУг намЕрение лОктя нЕдруг недУг некролОг нЕнависть',
     'нефтепровОд новостЕй нОгтя Отрочество партЕр портфЕль придАное призЫв свЁкла сирОты созЫв',
     'сосредотОчение срЕдства стАтуя столЯр тамОжня тОрты тУфля цемЕнт цЕнтнер цепОчка шАрфы шофЁр экспЕрт']},
    {id:'verb', title:'Глаголы', color:'#FF8A3D', units:[
     'бралА бралАсь взялА взялАсь влилАсь ворвалАсь воспринЯть вручИт гналА добралА дождалАсь дозвонИтся',
-    'ждалА закУпорить зАнял занялА звонИт кАшлянуть клАла клЕить кровоточИт лгалА лилА наврАла',
-    'начАть нАчал началА нАчали облегчИть ободрИть одолжИть озлОбить опОшлить освЕдомиться позвонИшь понялА',
-    'прИбыл прибылА принЯть прИнял принялА сверлИт снялА сорИт углубИть укрепИт чЕрпать щЁлкать включИт']},
+    'ждалА закУпорить зАнял занялА звонИт кАшлянуть клАла клЕить кровоточИть лгалА лилА заперлА',
+    'начАть нАчал началА нАчали облегчИть ободрИть одолжИть озлОбить опОшлить освЕдомиться позвонИт понялА',
+    'прИбыл прибылА принЯть прИнял принялА сверлИт снялА защемИт углубИть укрепИт чЕрпать щЁлкать окружИт']},
    {id:'part', title:'Причастия и деепричастия', color:'#EC5FA0', units:[
-    'балОванный включЁнный довЕзенный зАгнутый занятА кормЯщий кровоточАщий начАвший нАчатый отключЁнный',
-    'повторЁнный понЯвший прИнятый сОгнутый углублЁнный начАв поднЯв понЯв создАв закУпорив']},
+    'нажИвший ободрЁнный довезЁнный зАгнутый занятА налИвший кровоточАщий начАвший нАчатый отключЁнный',
+    'повторЁнный понЯвший прИнятый сОгнутый углублЁнный начАв отдАв понЯв создАв закУпорив']},
    {id:'adj', title:'Прилагательные и наречия', color:'#22B8A7', units:[
     'вернА знАчимый красИвейший кУхонный ловкА мозаИчный оптОвый прозорлИва',
-    'красИвее донЕльзя дОнизу дОсуха зАсветло зАтемно Издавна надОлго довЕрху вкрУтую']}
+    'красИвее вОвремя дОнизу дОсуха зАсветло ненадОлго надОлго дОверху']}
   ]},
  {id:'pref', title:'Приставки', kind:'gap', tag:{ege:'ЕГЭ · задание 10', oge:'ОГЭ · задания 6–7', free:'Орфография'},
   sections:[
@@ -435,7 +435,7 @@ window.AKI_MODULES = [
      'р(о:а)зыск ros','р(а:о)зыскать ras','р(о:а)спись ros','р(а:о)списание ras','р(о:а)ссыпь ros','р(а:о)ссыпать ras']
    ]},
    {id:'pp', title:'ПРЕ или ПРИ', color:'#FF8A3D', opts:['е','и'], units:[
-    ['пр(е)красный pre_v','пр(е)милый pre_v','пр(е)неприятный pre_v','пр(е)градить pre_p','пр(е)рвать pre_p','пр(е)вратить pre_p','пр(е)одолеть pre_p',
+    ['пр(е)красный pre_v','пр(е)милый pre_v','пр(е)неприятный pre_v','пр(е)градить pre_p','пр(е)рвать pre_p','пр(е)вратить dict','пр(е)одолеть dict',
      'пр(и)ехать pri','пр(и)шить pri','пр(и)клеить pri','пр(и)морский pri','пр(и)открыть pri','пр(и)школьный pri'],
     ['Поезд пр(и)бывает в 10:00 p_pribyt','Мы пр(е)бываем в отличном настроении p_prebyt','Он пр(е)дал друга p_predat','Соус пр(и)дал блюду остроту p_pridat',
      'Ученик стал пр(е)емником мастера p_preem','Старый радиопр(и)ёмник p_priem','Пр(е)творить мечту в жизнь p_pretv','Пр(и)твори дверь p_pritv',
@@ -469,6 +469,104 @@ window.AKI_MODULES = [
    ]}
   ]}
 ];
+
+Object.assign(window.AKI_RULES,{
+ rb:{why:'В корнях БЕР/БИР, ДЕР/ДИР, МЕР/МИР, ПЕР/ПИР, ТЕР/ТИР, БЛЕСТ/БЛИСТ, ЖЕГ/ЖИГ и СТЕЛ/СТИЛ перед суффиксом А пишется И, без него — Е.',short:'перед суффиксом А пишется И, без него — Е'},
+ rk:{why:'В корне КАС/КОС перед суффиксом А пишется А: касаться; без суффикса — О: коснуться.',short:'в КАС/КОС буква зависит от суффикса А'},
+ rl:{why:'В корне ЛАГ/ЛОЖ перед Г пишется А, перед Ж — О. Исключение: полог.',short:'перед Г пишется А, перед Ж — О'},
+ rr:{why:'В корне РАСТ/РАЩ/РОС перед СТ и Щ пишется А, перед С — О. Есть исключения: росток, ростовщик, отрасль.',short:'перед СТ и Щ пишется А, перед С — О'},
+ rv:{why:'Проверочное слово — вОды: гласная корня под ударением.',short:'проверочное слово — вОды'},
+ re:{why:'Проверочное слово — лес: гласная корня под ударением.',short:'проверочное слово — лес'},
+ rt:{why:'Проверочное слово — трАвы: гласная корня под ударением.',short:'проверочное слово — трАвы'},
+ rm:{why:'Проверочное слово — мОст: гласная корня под ударением.',short:'проверочное слово — мОст'},
+ rre:{why:'Проверочное слово — рЕки: гласная корня под ударением.',short:'проверочное слово — рЕки'},
+ rd:{why:'Безударную гласную нельзя проверить ударением: написание нужно запомнить или проверить по словарю.',short:'непроверяемую гласную нужно запомнить'}
+});
+window.AKI_MODULES.push({id:'roots',title:'Гласные в корнях',kind:'gap',tag:{ege:'ЕГЭ · тренировка к заданию 9',oge:'ОГЭ · орфография',free:'Орфография'},multi:{ege:'rows',oge:'rows',free:'rows'},sections:[
+{id:'root_alt_i',title:'Чередование: И или Е',color:'#7C5CFF',opts:['и','е'],units:[
+['заб(и)рать rb','заб(е)рёт rb','отд(и)рать rb','отд(е)рёт rb','зам(и)рать rb','зам(е)реть rb','отп(и)рать rb','отп(е)реть rb','раст(и)рать rb','раст(е)реть rb'],
+['бл(и)стать rb','бл(е)стеть rb','заж(и)гать rb','заж(е)чь rb','расст(и)лать rb','расст(е)лить rb','соб(и)рать rb','соб(е)рёт rb','выд(и)рать rb','выд(е)рет rb']]},
+{id:'root_alt_a',title:'Чередование: А или О',color:'#FF8A3D',opts:['а','о'],units:[
+['к(а)саться rk','к(о)снуться rk','прик(а)саться rk','прик(о)снуться rk','к(а)сательная rk','прик(о)сновение rk','предл(а)гать rl','предл(о)жить rl','изл(а)гать rl','изл(о)жить rl'],
+['выр(а)стить rr','выр(о)с rr','р(а)стение rr','выр(а)щивать rr','выр(о)сли rr','р(а)сти rr','зар(о)сли rr','ср(а)щение rr','пол(а)гать rl','пол(о)жить rl']]},
+{id:'root_checked',title:'Проверяемые гласные',color:'#EC5FA0',opts:null,units:[
+['в(о:а)да rv','в(о:а)дяной rv','в(о:а)дичка rv','л(е:и)сной re','л(е:и)сник re','л(е:и)сок re','тр(а:о)ва rt','тр(а:о)вяной rt','м(о:а)сты rm','м(о:а)сток rm'],
+['р(е:и)ка rre','р(е:и)чной rre','р(е:и)чушка rre','в(о:а)допад rv','л(е:и)систый re','тр(а:о)винка rt','м(о:а)стовой rm','л(е:и)сничий re','р(е:и)чник rre','в(о:а)допровод rv']]},
+{id:'root_dict',title:'Словарные слова',color:'#22B8A7',opts:null,units:[
+['в(о:а)кзал rd','к(о:а)ридор rd','г(о:а)ризонт rd','к(а:о)рандаш rd','б(а:о)гаж rd','ап(е:и)льсин rd','в(е:и)стибюль rd','в(и:е)негрет rd','д(и:е)ректор rd','инт(е:и)ллект rd'],
+['б(а:о)тон rd','к(а:о)пуста rd','к(о:а)стюм rd','к(о:а)рабль rd','м(о:а)локо rd','к(и:е)лометр rd','в(е:и)лосипед rd','д(и:е)алог rd','д(и:е)станция rd','эксп(е:и)римент rd']]}
+]});
+
+Object.assign(window.AKI_RULES,{
+ v1:{why:'Это форма глагола I спряжения: в безударном личном окончании пишется Е.',short:'I спряжение: в окончании Е'},
+ v2:{why:'Это форма глагола II спряжения: в безударном личном окончании пишется И.',short:'II спряжение: в окончании И'},
+ v2e:{why:'Это глагол-исключение II спряжения: в безударном личном окончании пишется И.',short:'глагол-исключение II спряжения'},
+ ne_verb:{why:'НЕ с глаголами обычно пишется раздельно: не читал, не знает.',short:'НЕ с глаголом пишется раздельно'},
+ ne_short:{why:'НЕ с кратким причастием пишется раздельно: задача не решена.',short:'НЕ с кратким причастием пишется раздельно'},
+ ne_dep:{why:'У полного причастия есть зависимое слово, поэтому НЕ пишется раздельно.',short:'есть зависимое слово: НЕ раздельно'},
+ ne_op:{why:'Есть противопоставление с союзом А, поэтому НЕ пишется раздельно.',short:'противопоставление с А: НЕ раздельно'},
+ ne_full:{why:'Полное причастие без зависимых слов и противопоставления с А пишется с НЕ слитно.',short:'полное причастие без зависимых слов: слитно'},
+ ne_syn:{why:'Прилагательное с НЕ можно заменить близким по смыслу словом без НЕ; в этом контексте написание слитное.',short:'можно заменить синонимом без НЕ: слитно'},
+ pc_sub:{why:'Придаточная часть отделяется запятой от главной части сложноподчинённого предложения.',short:'придаточная часть отделяется запятой'},
+ pc_deep:{why:'Деепричастный оборот обычно выделяется запятыми; здесь перед ним нужна запятая.',short:'деепричастный оборот выделяется запятой'},
+ pc_part:{why:'Причастный оборот после определяемого слова обособляется запятой.',short:'причастный оборот стоит после определяемого слова'},
+ pc_hom:{why:'Однородные сказуемые соединены одиночным союзом И, запятая перед ним не нужна.',short:'однородные сказуемые с одиночным И: без запятой'},
+ pc_ssp:{why:'Части сложносочинённого предложения имеют разные грамматические основы и разделяются запятой.',short:'между частями сложного предложения нужна запятая'}
+});
+window.AKI_MODULES.push({id:'verbs',title:'Глаголы и причастия',kind:'gap',tag:{ege:'ЕГЭ · тренировка к заданию 12',oge:'ОГЭ · орфография',free:'Орфография'},multi:{ege:'rows',oge:'rows',free:'rows'},sections:[
+{id:'verb_end',title:'Личные окончания: Е или И',color:'#7C5CFF',opts:['е','и'],units:[
+['пиш(е)шь v1','чита(е)шь v1','дума(е)шь v1','се(е)шь v1','та(е)шь v1','стро(и)шь v2','кле(и)шь v2','пил(и)шь v2','нос(и)шь v2','корм(и)шь v2'],
+['пиш(е)т v1','чита(е)т v1','дума(е)т v1','се(е)т v1','та(е)т v1','стро(и)т v2','кле(и)т v2','пил(и)т v2','нос(и)т v2','корм(и)т v2'],
+['бре(е)шь v1','стел(е)шь v1','бре(е)т v1','стел(е)т v1','гон(и)шь v2e','держ(и)шь v2e','дыш(и)шь v2e','слыш(и)шь v2e','вид(и)шь v2e','завис(и)шь v2e'],
+['гон(и)т v2e','держ(и)т v2e','дыш(и)т v2e','слыш(и)т v2e','вид(и)т v2e','завис(и)т v2e','обид(и)шь v2e','терп(и)шь v2e','смотр(и)шь v2e','ненавид(и)шь v2e']]}]});
+window.AKI_MODULES.push({id:'ne',title:'НЕ: слитно или раздельно',kind:'gap',tag:{ege:'ЕГЭ · тренировка к заданию 13',oge:'ОГЭ · орфография',free:'Орфография'},multi:{ege:'two',oge:'two',free:'two'},sections:[
+{id:'ne_choice',title:'НЕ с разными частями речи',color:'#FF8A3D',opts:null,units:[
+['Он (не :не)читал книгу. ne_verb','Она (не :не)знает ответа. ne_verb','Мы (не :не)пойдём гулять. ne_verb','Я (не :не)видел фильм. ne_verb','Они (не :не)слышали вопрос. ne_verb','Задача (не :не)решена. ne_short','Дверь (не :не)закрыта. ne_short','Письмо (не :не)отправлено. ne_short','Книга (не :не)прочитана. ne_short','Работа (не :не)закончена. ne_short'],
+['Ещё (не :не)прочитанная мною книга лежала на столе. ne_dep','(Не :Не)решённая учеником задача оказалась сложной. ne_dep','(Не :Не)закрытая вовремя дверь скрипела. ne_dep','(Не :Не)написанное вовремя письмо осталось в черновиках. ne_dep','(Не :Не)окрашенный мастером забор стоял у дома. ne_dep','Это (не :не)высокий, а низкий дом. ne_op','Это (не :не)широкая, а узкая дорога. ne_op','Это (не :не)глубокая, а мелкая река. ne_op','Это (не :не)большая, а маленькая сумка. ne_op','Это (не :не)смешной, а грустный фильм. ne_op'],
+['На столе лежала (не:не )прочитанная книга. ne_full','На доске осталась (не:не )решённая задача. ne_full','Это была (не:не )законченная работа. ne_full','Мы нашли (не:не )отправленное письмо. ne_full','Рядом стоял (не:не )окрашенный забор. ne_full','Дом был (не:не )большой: скорее маленький. ne_syn','Погода была (не:не )холодная: скорее тёплая. ne_syn','Этот путь (не:не )длинный: он короткий. ne_syn','Это была (не:не )глубокая речка, совсем мелкая. ne_syn','Вопрос оказался (не:не )сложным: его легко решить. ne_syn']]}]});
+window.AKI_MODULES.push({id:'punct',title:'Запятые',kind:'gap',tag:{ege:'ЕГЭ · пунктуация',oge:'ОГЭ · пунктуация',free:'Пунктуация'},multi:{ege:'two',oge:'two',free:'two'},sections:[
+{id:'punct_base',title:'Запятая: нужна или нет?',color:'#22B8A7',opts:[',','∅'],units:[
+['Когда пошёл дождь(,:∅) мы вошли в дом. pc_sub','Если будет солнце(,:∅) мы пойдём гулять. pc_sub','Когда прозвенел звонок(,:∅) урок начался. pc_sub','Я понял(,:∅) что поезд опаздывает. pc_sub','Она сказала(,:∅) что скоро вернётся. pc_sub','Я читал книгу(∅:,) и слушал музыку. pc_hom','Мальчик улыбнулся(∅:,) и побежал домой. pc_hom','Птица взлетела(∅:,) и скрылась в небе. pc_hom','Мы открыли окно(∅:,) и проветрили комнату. pc_hom','Ученики вошли в класс(∅:,) и сели за парты. pc_hom'],
+['Дождь закончился(,:∅) и солнце выглянуло. pc_ssp','Ветер усилился(,:∅) и деревья зашумели. pc_ssp','Стемнело(,:∅) и на небе появились звёзды. pc_ssp','Мама готовила ужин(,:∅) а папа накрывал стол. pc_ssp','Солнце село(,:∅) но небо ещё светлело. pc_ssp','Девочка остановилась(,:∅) заметив котёнка. pc_deep','Он улыбнулся(,:∅) увидев друга. pc_deep','Мы вышли на улицу(,:∅) закончив работу. pc_deep','Она ушла(,:∅) попрощавшись с друзьями. pc_deep','Мальчик подошёл(,:∅) неся тяжёлую сумку. pc_deep'],
+['Книга(,:∅) лежавшая на столе, была новой. pc_part','Дерево(,:∅) растущее у дома, зацвело. pc_part','Дом(,:∅) построенный у реки, виден издалека. pc_part','Дорога(,:∅) ведущая к лесу, была пустынна. pc_part','Письмо(,:∅) написанное другом, лежало на столе. pc_part','Когда наступило утро(,:∅) город проснулся. pc_sub','Я знаю(,:∅) что ты справишься. pc_sub','Кот потянулся(∅:,) и улёгся спать. pc_hom','Мы поднялись(∅:,) и вышли из комнаты. pc_hom','Учитель объяснял правило(,:∅) а ученики слушали. pc_ssp']]}]});
+Object.assign(window.AKI_RULES,{
+ sf_ch:{why:'В суффиксе названий лиц после Д, Т, З, С, Ж пишется Ч: переводчик, рассказчик.',short:'после Д, Т, З, С, Ж пишется -ЧИК'},
+ sf_sh:{why:'В суффиксе названий лиц после других согласных пишется Щ: сборщик, банщик.',short:'после других согласных пишется -ЩИК'},
+ wr_due:{why:'Вследствие — производный предлог со значением причины: из-за дождя. Пишется слитно.',short:'предлог вследствие = из-за'},
+ wr_case:{why:'В следствии — существительное с предлогом; можно сказать «в этом следствии».',short:'существительное с предлогом пишется раздельно'},
+ wr_po:{why:'Поэтому — наречие со значением «по этой причине», пишется слитно.',short:'поэтому = по этой причине'},
+ wr_dem:{why:'По этому — предлог и указательное местоимение перед существительным; пишутся раздельно.',short:'предлог с местоимением пишется раздельно'},
+ wr_same:{why:'Тоже означает «также», это союз; пишется слитно.',short:'тоже = также'},
+ wr_that:{why:'То же — местоимение с частицей: здесь речь об одном и том же предмете.',short:'то же указывает на тот же предмет'},
+ wr_because:{why:'Чтобы — союз цели, пишется слитно.',short:'союз чтобы выражает цель'},
+ wr_what:{why:'Что бы — местоимение с частицей; частицу можно перенести: «что мне почитать бы».',short:'что бы: местоимение с частицей'},
+ wr_hy:{why:'Наречия с приставкой ПО- и суффиксами -ОМУ/-ЕМУ, -И или -СКИ пишутся через дефис: по-новому, по-русски.',short:'наречия с ПО- в этом случае пишутся через дефис'},
+ wr_hy2:{why:'Неопределённые местоимения с -ТО, -ЛИБО, -НИБУДЬ пишутся через дефис.',short:'частицы -ТО, -ЛИБО, -НИБУДЬ пишутся через дефис'}
+});
+window.AKI_MODULES.push({id:'suffix',title:'Суффиксы существительных',kind:'gap',tag:{ege:'ЕГЭ · тренировка к заданию 11',oge:'ОГЭ · орфография',free:'Орфография'},multi:{ege:'rows',oge:'rows',free:'rows'},sections:[
+{id:'suffix_ch',title:'Суффиксы -ЧИК- и -ЩИК-',color:'#7C5CFF',opts:['ч','щ'],units:[
+['перевод(ч)ик sf_ch','лёт(ч)ик sf_ch','рассказ(ч)ик sf_ch','заказ(ч)ик sf_ch','разнос(ч)ик sf_ch','груз(ч)ик sf_ch','сбор(щ)ик sf_sh','убор(щ)ик sf_sh','камен(щ)ик sf_sh','бан(щ)ик sf_sh'],
+['развед(ч)ик sf_ch','водопровод(ч)ик sf_ch','уклад(ч)ик sf_ch','перепис(ч)ик sf_ch','перебеж(ч)ик sf_ch','налад(ч)ик sf_ch','набор(щ)ик sf_sh','фонар(щ)ик sf_sh','бетон(щ)ик sf_sh','свар(щ)ик sf_sh']]}]});
+window.AKI_MODULES.push({id:'together',title:'Слитно, раздельно и через дефис',kind:'gap',tag:{ege:'ЕГЭ · тренировка к заданию 14',oge:'ОГЭ · орфография',free:'Орфография'},multi:{ege:'two',oge:'two',free:'two'},sections:[
+{id:'writing',title:'Как писать слова?',color:'#EC5FA0',opts:null,units:[
+['(Вследствие:В следствие) дождя матч отменили. wr_due','(Вследствие:В следствие) снегопада дорогу закрыли. wr_due','(Вследствие:В следствие) болезни он пропустил урок. wr_due','(В следствии:Вследствии) по делу появились новые сведения. wr_case','(В следствии:Вследствии) по делу допустили ошибку. wr_case','Дождь усилился, (поэтому:по этому) мы остались дома. wr_po','Было поздно, (поэтому:по этому) мы ушли. wr_po','Мы шли (по этому:поэтому) мосту. wr_dem','Они ехали (по этому:поэтому) маршруту. wr_dem','Я (тоже:то же) люблю читать. wr_same'],
+['Он (тоже:то же) пришёл на встречу. wr_same','Я выбрал (то же:тоже) платье, что и сестра. wr_that','Мы услышали (то же:тоже) слово. wr_that','Я пришёл, (чтобы:что бы) помочь. wr_because','Она открыла окно, (чтобы:что бы) проветрить комнату. wr_because','(Что бы:Чтобы) мне почитать? wr_what','Он не знал, (что бы:чтобы) ответить. wr_what','Она говорила (по-русски:порусски). wr_hy','Всё получилось (по-новому:поновому). wr_hy','Она улыбнулась (по-доброму:подоброму). wr_hy'],
+['(Кто-то:Ктото) постучал в дверь. wr_hy2','(Что-нибудь:Чтонибудь) пригодится. wr_hy2','Попроси (кого-либо:коголибо) помочь. wr_hy2','Я сделал это (по-своему:посвоему). wr_hy','Он поступил (по-старому:постарому). wr_hy','(Вследствие:В следствие) ремонта музей закрыт. wr_due','Мы гуляли (по этому:поэтому) парку. wr_dem','Она (тоже:то же) смотрела этот фильм. wr_same','Я взял (то же:тоже) пальто, что и вчера. wr_that','Он пришёл пораньше, (чтобы:что бы) всё подготовить. wr_because']]}]});
+
+// Авторские упражнения: темы выбраны по рекомендациям ФИПИ, сами задания не выдаются за банк ФИПИ.
+Object.assign(window.AKI_RULES,{
+ part_i:{why:'Действительное причастие настоящего времени образовано от глагола I спряжения: в форме «они» будет -ут/-ют; суффикс причастия — -ущ-/-ющ-.',short:'I спряжение: -ущ-/-ющ-'},
+ part_ii:{why:'Действительное причастие настоящего времени образовано от глагола II спряжения: в форме «они» будет -ат/-ят; суффикс причастия — -ащ-/-ящ-.',short:'II спряжение: -ащ-/-ящ-'},
+ pc_common:{why:'У частей сложного предложения общий второстепенный член в начале; перед одиночным союзом И запятая здесь не нужна.',short:'общий второстепенный член: запятая перед И не нужна'}
+});
+window.AKI_MODULES.find(m=>m.id==='verbs').sections.push({id:'part_pres',title:'Причастия: -УЩ-/-ЮЩ- и -АЩ-/-ЯЩ-',color:'#EC5FA0',opts:null,units:[
+ ['чита(ю:я)щий part_i','зна(ю:я)щий part_i','игра(ю:я)щий part_i','се(ю:я)щий part_i','бре(ю:я)щий part_i','стел(ю:я)щий part_i','пиш(у:а)щий part_i','ищ(у:а)щий part_i','плач(у:а)щий part_i','работа(ю:я)щий part_i'],
+ ['стро(я:ю)щий part_ii','кле(я:ю)щий part_ii','гон(я:ю)щий part_ii','терп(я:ю)щий part_ii','вид(я:ю)щий part_ii','завис(я:ю)щий part_ii','смотр(я:ю)щий part_ii','держ(а:у)щий part_ii','дыш(а:у)щий part_ii','слыш(а:у)щий part_ii']
+]});
+window.AKI_MODULES.find(m=>m.id==='punct').sections.push({id:'punct_complex',title:'Сложное предложение и союз И',color:'#7C5CFF',opts:[',','∅'],units:[
+ ['Вечером стемнело(∅:,) и зажглись фонари. pc_common','На улице похолодало(∅:,) и пошёл снег. pc_common','Утром прошёл дождь(∅:,) и выглянуло солнце. pc_common','В комнате было тихо(∅:,) и часы громко тикали. pc_common','В лесу закричала птица(∅:,) и затрещали ветки. pc_common','Море потемнело(,:∅) и ветер усилился. pc_ssp','Наступила ночь(,:∅) и в окнах зажёгся свет. pc_ssp','Дорога опустела(,:∅) и автобус уехал. pc_ssp','Снег растаял(,:∅) и ручьи зазвенели. pc_ssp','Листья опали(,:∅) и парк стал светлее. pc_ssp'],
+ ['Я увидел дом(,:∅) который стоял у реки. pc_sub','Мы не знали(,:∅) когда вернётся поезд. pc_sub','Учитель спросил(,:∅) почему ученик опоздал. pc_sub','Друзья пошли туда(,:∅) где начиналась тропинка. pc_sub','Мы остались дома(,:∅) потому что началась гроза. pc_sub','Когда рассвело(,:∅) туристы вышли из палатки. pc_sub','Если снег растает(,:∅) мы пойдём к реке. pc_sub','Пока дети читали(,:∅) взрослые готовили ужин. pc_sub','Я вернулся туда(,:∅) где мы встретились. pc_sub','Она улыбнулась(,:∅) когда увидела подарок. pc_sub']
+]});
 </script>
 <script>'use strict';
 /* ====== ЗВУК (синтез WebAudio, без файлов) ====== */
@@ -631,12 +729,12 @@ MODS.forEach(mod => {
     NODES.push({id:`${sec.id}B`, mod, sec, keys:secKeys, type:'boss'});
   });
 });
-const TRACKS = {ege:{name:'ЕГЭ', label:'10–11 класс · ЕГЭ', order:['stress','pref','nn']}, oge:{name:'ОГЭ', label:'9 класс · ОГЭ', order:['pref','nn','stress']}, free:{name:'', label:'Просто прокачать русский', order:['stress','pref','nn']}};
+const TRACKS = {ege:{name:'ЕГЭ', label:'10–11 класс · ЕГЭ', order:['verbs','together','punct','stress','pref','nn','roots','suffix','ne']}, oge:{name:'ОГЭ', label:'9 класс · ОГЭ', order:['pref','nn','roots','suffix','verbs','ne','together','punct','stress']}, free:{name:'', label:'Просто прокачать русский', order:['stress','pref','nn','roots','suffix','verbs','ne','together','punct']}};
 const trk = () => TRACKS[S.track] ? S.track : 'ege';
 const trackMods = () => TRACKS[trk()].order.map(id=>MODS.find(m=>m.id===id)).filter(Boolean);
 const trackKeys = () => { const ms = trackMods(); return ALLKEYS.filter(k=>ms.includes(ITEM[k].mod)); };
 const gapWord = (it, l) => it.wpre + l + it.post;
-const gapFull = (it, l) => it.pre + l + it.post + it.rest;
+const gapFull = (it, l) => it.pre + (it.mod.id==='punct'&&l==='∅'?'':l) + it.post + it.rest;
 const dotted = it => it.wpre + '..' + it.post;
 const secPool = sec => ALLKEYS.filter(k=>ITEM[k].sec===sec && !ITEM[k].ctx);
 const isGapKey = k => ITEM[k] && ITEM[k].kind==='gap';
@@ -645,7 +743,7 @@ const stressIdx = w => [...w].findIndex(ch => /[АЕЁИОУЫЭЮЯ]/.test(ch))
 const shown = w => w.toLowerCase().replace(/ё/g, 'е');
 const display = (w, idx) => [...shown(w)].map((ch,i)=> i===idx ? ch.toUpperCase() : ch).join('');
 const revealS = w => { const i = stressIdx(w); return [...w.toLowerCase()].map((ch,k)=>k===i?`<span class="stress">${ch.toUpperCase()}</span>`:ch).join(''); };
-const reveal = k => { const it=ITEM[k]; if(!it||it.kind==='stress') return revealS(k); return `${esc(it.pre)}<span class="stress">${esc(it.ans)}</span>${esc(it.post+it.rest)}`; };
+const reveal = k => { const it=ITEM[k]; if(!it||it.kind==='stress') return revealS(k); if(it.mod.id==='punct' && it.ans==='∅') return esc(gapFull(it,it.ans))+' <span class="small">(без запятой)</span>'; return `${esc(it.pre)}<span class="stress">${esc(it.ans)}</span>${esc(it.post+it.rest)}`; };
 const revealShort = k => { const it=ITEM[k]; if(!it||it.kind==='stress') return revealS(k); return `${esc(it.wpre)}<span class="stress">${esc(it.ans)}</span>${esc(it.post)}`; };
 function wrongIdx(w, rnd=Math.random){
   const s = stressIdx(w); const vs = [...w].map((c,i)=>isV(c)&&i!==s?i:-1).filter(i=>i>=0);
@@ -659,14 +757,14 @@ const HINTS = [
   [/^(жалюзИ|партЕр|шофЁр|диспансЕр|портфЕль)$/, 'Слово пришло из французского — ударение на последнем слоге.'],
   [/^(тОрты|бАнты|крАны|шАрфы|Иксы|кОнусы|лЕкторов)$/, 'Ударение не прыгает: как в начальной форме (торт → тОрты, бант → бАнты, кран → крАны).'],
   [/^(звонИт|позвонИшь|включИт|дозвонИтся|вручИт|сверлИт|сорИт|кровоточИт|укрепИт)$/, 'В формах этих глаголов ударение на окончании: звонИт, включИт, позвонИшь.'],
-  [/^(клАла|наврАла)$/, 'Исключение! Обычно в женском роде ударение на окончании (бралА), но клАла, наврАла.'],
+  [/^клАла$/, 'Исключение: клАла — ударение на первый слог.'],
   [/лА(сь)?$/, 'Глаголы прошедшего времени женского рода чаще ударны на окончании: бралА, взялА, началА.'],
   [/^(нАчал|нАчали|зАнял|прИнял|прИбыл)$/, 'В мужском роде и множ. числе ударение уходит к началу: нАчал, зАнял, прИнял.'],
   [/Ённый$/, 'Причастия на -ённый: ударение всегда на Ё — включЁнный, повторЁнный.'],
   [/^(начАв|поднЯв|понЯв|создАв|закУпорив|начАвший|понЯвший)$/, 'Ударение как в глаголе: начАть → начАв, понЯть → понЯв.'],
   [/^(занятА|вернА|ловкА|прозорлИва)$/, 'Краткая форма женского рода — запомни: занятА, вернА, ловкА, но прозорлИва.']
 ];
-const hintFor = w => { const it=ITEM[w]; if(it&&it.kind==='gap') return (RULES[it.rule]||{}).why||''; for (const [re,t] of HINTS) if (re.test(w)) return t; return 'Это слово из орфоэпического словника ФИПИ — просто запомни форму.'; };
+const hintFor = w => { const it=ITEM[w]; if(it&&it.kind==='gap') return (RULES[it.rule]||{}).why||''; for (const [re,t] of HINTS) if (re.test(w)) return t; return 'Запомни нормативное ударение в этой форме слова.'; };
 const OK_PHR = ['Красава!','Чётко!','Вот это база!','Изи!','Ты в потоке!','Так держать!'];
 const BAD_PHR = ['Почти!','Мимо, но без паники','Бывает. Запоминаем:','Не-а, но теперь запомнишь'];
 const pick = (a, r=Math.random) => a[Math.floor(r()*a.length)];
@@ -685,10 +783,11 @@ function save(){ localStorage.setItem(KEY, JSON.stringify(S)); clearTimeout(save
   saveT = setTimeout(()=>{ try{ const j=JSON.stringify(S); if(inTG && tg.CloudStorage && j.length<4000) tg.CloudStorage.setItem('p', j, ()=>{}); }catch(e){} }, 800); }
 const isPlus = () => S.plusUntil > Date.now();
 function tick(){
+  if(streakCheckDate!==today()) { streakCheckDate=today(); streakCheckDone=false; if(inTG) setTimeout(prepareShopState,0); }
   if (S.day !== today()) { S.day = today(); S.dayXp = 0; }
   if (S.last && dayDiff(S.last, today()) > 1) {
-    const frozen = isPlus() && dayDiff(S.last, today()) === 2;
-    if (!frozen) S.streak = 0;
+    const gap=dayDiff(S.last,today()); const frozen=gap===2 && (isPlus() || S.freezeFor===S.last);
+    if (!frozen && !(inTG && gap===2 && S.streak>0 && !streakCheckDone)) S.streak = 0;
   }
   const per = CONFIG.heartRegenMin*6e4;
   if (S.hearts >= CONFIG.heartsMax) S.hts = Date.now();
@@ -726,9 +825,71 @@ async function share(text, param){
   if (navigator.share) { try{ await navigator.share({text, url}); return; }catch(e){ if(e.name==='AbortError') return; } }
   try{ await navigator.clipboard.writeText(text+'\n'+url); toast('Ссылка скопирована'); }catch(e){ toast(url); }
 }
+let shopInfo=null, streakCheckDone=false, streakCheckDate=today(), shopPreparation=null;
+async function shopRequest(path, data={}) {
+  if(!inTG || !CONFIG.apiUrl || !tg.initData) throw new Error('Открой приложение внутри Telegram');
+  const res=await fetch(CONFIG.apiUrl.replace(/\/$/,'')+'/shop/'+path,{method:'POST',headers:{'content-type':'text/plain'},body:JSON.stringify({initData:tg.initData,...data})});
+  const j=await res.json(); if(!res.ok) {const e=new Error(j.error||'Нет связи с магазином'); e.status=res.status; throw e;} return j;
+}
+async function refreshShop() {
+  const j=await shopRequest('status'); shopInfo=j;
+  if(j.plusUntil!==S.plusUntil){ S.plusUntil=j.plusUntil; save(); }
+  return j;
+}
+
+async function prepareShopState() {
+  if(!inTG) { streakCheckDone=true; return; }
+  if(shopPreparation) return shopPreparation;
+  const checkDate=today();
+  shopPreparation=(async()=>{
+    try {
+      if(S.pendingSpend) {
+        try { await shopRequest('spend',S.pendingSpend); }
+        catch(e) { if(e.status!==409) throw e; }
+        delete S.pendingSpend; save();
+      }
+      let info=await refreshShop();
+      if(S.last && S.streak>0 && dayDiff(S.last,today())===2 && !isPlus() && S.freezeFor!==S.last && info.freezes>0) {
+        const op='freeze_'+S.last.replace(/-/g,'');
+        await shopRequest('spend',{kind:'freeze',operationId:op}); S.freezeFor=S.last; save(); await refreshShop();
+      }
+      if(checkDate===today()) { streakCheckDate=checkDate; streakCheckDone=true; }
+      if(!L && !$('#scrim')) render();
+    } catch(e) { console.log('Shop sync unavailable'); }
+  })();
+  try { await shopPreparation; } finally { shopPreparation=null; }
+}
+async function buyItem(product) {
+  if(!inTG) return toast('Покупки доступны в Telegram');
+  try { const before=await refreshShop(); const j=await shopRequest('invoice',{product}); tg.openInvoice(j.invoiceUrl,async status=>{
+    if(status!=='paid') return;
+    closeSheet(); toast('Проверяем оплату…');
+    for(let i=0;i<8;i++){ await new Promise(r=>setTimeout(r,1500)); try {const cur=await refreshShop(); if((product==='aki_hearts_5'&&cur.hearts>before.hearts)||(product==='aki_freeze_1'&&cur.freezes>before.freezes)){render();toast('Покупка начислена 💜');return;}}catch(_){} }
+    toast('Проверяем покупку. Открой приложение позже');
+  }); }catch(e){toast(e.message||'Магазин временно недоступен');}
+}
+async function usePaidHeart() {
+  const pending=S.pendingSpend || {kind:'heart',operationId:'heart_'+crypto.randomUUID().replace(/-/g,'')};
+  S.pendingSpend=pending; save();
+  const j=await shopRequest('spend',pending);
+  delete S.pendingSpend; shopInfo={...(shopInfo||{}),hearts:j.hearts,freezes:j.freezes}; save(); return j;
+}
+
+async function startTrial() {
+  try { const j=await shopRequest('trial'); S.plusUntil=Math.max(S.plusUntil,j.plusUntil); save(); closeSheet(); toast('Аки+ бесплатно на 3 дня 💜'); render(); }
+  catch(e){ toast(e.message||'Не получилось включить пробный период'); }
+}
+async function buyYear() {
+  try { const before=await refreshShop(); const j=await shopRequest('invoice',{product:'aki_year_365d'}); tg.openInvoice(j.invoiceUrl,async status=>{
+    if(status!=='paid') return;
+    closeSheet(); toast('Проверяем оплату…');
+    for(let i=0;i<8;i++){ await new Promise(r=>setTimeout(r,1500)); try { const cur=await refreshShop(); if(cur.yearUntil>before.yearUntil){render();toast('Аки+ активирована на 365 дней 💜');return;} }catch(_){} }
+    toast('Оплата принята; открой приложение позже для обновления доступа');
+  }); }catch(e){toast(e.message||'Магазин временно недоступен');}
+}
 function buyPlus(){
   if (!CONFIG.premiumInvoiceUrl || !inTG) { toast(inTG?'Оплата ещё не подключена (см. README)':'Оплата работает внутри Telegram'); return; }
-  tg.openInvoice(CONFIG.premiumInvoiceUrl, st => { if (st==='paid'){ S.plusUntil = Math.max(Date.now(),S.plusUntil)+30*864e5; S.hearts=CONFIG.heartsMax; save(); closeSheet(); haptic('ok'); SFX.play('perfect'); FX.confetti(160,1.1); achToast('love','Аки+','Активирована на 30 дней. Спасибо!'); render(); } });
+  tg.openInvoice(CONFIG.premiumInvoiceUrl, async st => { if(st!=='paid') return; closeSheet(); toast('Проверяем оплату…'); for(let i=0;i<8;i++){ await new Promise(r=>setTimeout(r,1500)); try { let prev=S.plusUntil; await refreshShop(); if(S.plusUntil>prev){ render(); toast('Аки+ активна 💜'); return; } } catch(_){} } toast('Оплата принята; открой приложение позже для обновления доступа'); });
 }
 
 /* ---------- напоминания (через бота) ---------- */
@@ -756,12 +917,12 @@ function sheet(html){ closeSheet(); SFX.play('whoosh'); const s=document.createE
   document.body.appendChild(s); const f=s.querySelector('button'); f&&f.focus(); }
 function closeSheet(){ const s=$('#scrim'); s&&s.remove(); }
 document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeSheet(); });
-const heartsText = () => isPlus() ? I.inf : `${I.heart}<span>${S.hearts}</span>`;
+const heartsText = () => isPlus() ? I.inf : `${I.heart}<span>${S.hearts}${shopInfo&&shopInfo.hearts?` + ${shopInfo.hearts}`:''}</span>`;
 function heartsSheet(){
   const per=CONFIG.heartRegenMin*6e4; const left = S.hearts>=CONFIG.heartsMax?0:Math.ceil((S.hts+per-Date.now())/6e4);
   sheet(`${mascot(isPlus()?'love':S.hearts===0?'cry':'joy',110,'center pop')}<h2 style="text-align:center">${isPlus()?'Безлимитные сердечки':'Сердечки: '+S.hearts+' из '+CONFIG.heartsMax}</h2>
   <p class="muted">${isPlus()?'С Аки+ ошибки не тратят жизни.':`Ошибка в уроке = минус сердечко. ${left?`Следующее восстановится через ${left} мин.`:'Все сердечки на месте.'}`}</p>
-  ${isPlus()?'':`<div class="stack"><button class="btn ghost" data-act="review">${I.redo} Работа над ошибками: +1 сердечко</button><button class="btn" data-act="plus">${I.crown} Безлимит с Аки+</button></div>`}
+  ${isPlus()?'':`<div class="stack"><button class="btn ghost" data-act="review">${I.redo} Работа над ошибками: +1 сердечко</button><button class="btn" data-act="plus">${I.crown} Безлимит с Аки+</button>${inTG?`<button class="btn ghost" data-act="buy-hearts">5 запасных сердечек · 10 ⭐</button><p class="muted small">Запас: ${shopInfo?.hearts||0}. Работает при подключении к интернету.</p>`:''}</div>`}
   <div style="margin-top:12px"><button class="btn ghost" data-act="close">Понятно</button></div>`);
 }
 function plusSheet(){
@@ -771,8 +932,9 @@ function plusSheet(){
    <li>${I.fire}<span><b>Заморозка серии</b><br><span class="muted small">Пропустил один день — серия не сгорит</span></span></li>
    <li>${I.crown}<span><b>Новые задания ЕГЭ и ОГЭ первым</b><br><span class="muted small">Открываются по мере выхода</span></span></li>
   </ul>
-  ${isPlus()?`<p><b>Активно до ${new Date(S.plusUntil).toLocaleDateString('ru-RU')}</b></p>`:`<button class="btn" data-act="buy">Подключить за ${CONFIG.premiumPrice} ⭐</button>`}
-  <div style="margin-top:10px"><button class="btn ghost" data-act="close">Не сейчас</button></div>`);
+  ${isPlus()?`<p><b>Активно до ${new Date(S.plusUntil).toLocaleDateString('ru-RU')}</b></p>`:`<div class="stack">${shopInfo&&!shopInfo.trialStarted?'<button class="btn ghost" data-act="trial">Попробовать бесплатно 3 дня</button>':''}<button class="btn" data-act="buy">99 ⭐ / 30 дней</button></div><p class="muted small">Подписка на 30 дней продлевается автоматически. Отменить можно в Telegram.</p>`}
+  <div class="stack" style="margin-top:10px"><button class="btn ghost" data-act="year">365 дней за 799 ⭐</button><p class="muted small">Разовая оплата на 365 дней, без автопродления. При повторной покупке срок продлевается. При активной месячной подписке сроки могут пересекаться; её автопродление отменяется отдельно в Telegram.</p><button class="btn ghost" data-act="close">Не сейчас</button></div>`);
+  if(inTG && !shopInfo) { const current=$('#scrim'); refreshShop().then(()=>{ if($('#scrim')===current) plusSheet(); }).catch(()=>{}); }
 }
 document.addEventListener('click', e=>{
   const b = e.target.closest('[data-act]'); if(!b) return; const a=b.dataset.act;
@@ -780,8 +942,12 @@ document.addEventListener('click', e=>{
   if(a==='hearts') heartsSheet();
   if(a==='plus') plusSheet();
   if(a==='buy') buyPlus();
+  if(a==='trial') startTrial();
+  if(a==='year') buyYear();
+  if(a==='buy-hearts') buyItem('aki_hearts_5');
+  if(a==='buy-freeze') buyItem('aki_freeze_1');
   if(a==='review'){ closeSheet(); startReview(); }
-  if(a==='streak') sheet(`<div class="row">${mascot(S.streak?'streak':'sleep',110,'pop')}<h2>Серия: ${S.streak} ${plural(S.streak,'день','дня','дней')}</h2></div><p class="muted">Пройди хотя бы один урок в день, чтобы серия росла. Рекорд: ${S.bestStreak}.</p><button class="btn ghost" data-act="close">Ок</button>`);
+  if(a==='streak') sheet(`<div class="row">${mascot(S.streak?'streak':'sleep',110,'pop')}<h2>Серия: ${S.streak} ${plural(S.streak,'день','дня','дней')}</h2></div><p class="muted">Пройди хотя бы один урок в день, чтобы серия росла. Рекорд: ${S.bestStreak}.</p>${inTG&&!isPlus()?`<button class="btn" data-act="buy-freeze">Заморозка серии · 15 ⭐</button><p class="muted small">Запас: ${shopInfo?.freezes||0}. Одна заморозка защищает серию при пропуске одного дня. Нужен интернет.</p>`:''}<button class="btn ghost" data-act="close">Ок</button>`);
 });
 const plural=(n,a,b,c)=>{n=Math.abs(n)%100;const m=n%10;return n>10&&n<20?c:m>1&&m<5?b:m===1?a:c;};
 
@@ -806,9 +972,9 @@ function renderOnb(){
   if(!S.track && TRACKS[startParam]) S.track=startParam;
   root.innerHTML = `<div class="onb">${mascot('point',170,'center float')}
   <h1>Русский для ЕГЭ и ОГЭ<br>за 5 минут в день</h1>
-  <p class="muted">Ударения, приставки и форматы заданий ФИПИ: мини-уроки, спидраны и батлы с друзьями.</p>
+  <p class="muted">Авторские тренировки по темам ЕГЭ и ОГЭ: мини-уроки, спидраны и батлы с друзьями.</p>
   <h2 style="font-size:17px;margin:24px 0 10px;text-align:left">Что сдаёшь?</h2>
-  <div class="seg col" id="trk">${Object.entries(TRACKS).map(([v,t])=>`<button aria-pressed="${S.track===v}" data-v="${v}">${t.label}<small>${v==='ege'?'задания 4, 10 и 15':v==='oge'?'задания 6–7 и собеседование':'без привязки к экзамену'}</small></button>`).join('')}</div>
+  <div class="seg col" id="trk">${Object.entries(TRACKS).map(([v,t])=>`<button aria-pressed="${S.track===v}" data-v="${v}">${t.label}<small>${v==='ege'?'орфоэпия, орфография и пунктуация':v==='oge'?'орфография, пунктуация и собеседование':'без привязки к экзамену'}</small></button>`).join('')}</div>
   <h2 style="font-size:17px;margin:22px 0 10px;text-align:left">Цель на день</h2>
   <div class="seg" id="goal">${[[20,'Лайт','3 мин'],[50,'Норм','5 мин'],[100,'Хардкор','10 мин']].map(([v,t,s])=>`<button aria-pressed="${S.goal===v}" data-v="${v}">${t}<small>${s} · ${v} XP</small></button>`).join('')}</div>
   <div style="flex:1;min-height:24px"></div><button class="btn" id="go" ${S.track?'':'disabled'}>Погнали</button></div>`;
@@ -819,8 +985,9 @@ function renderOnb(){
 function ring(p){ const c=2*Math.PI*24; return `<svg class="ring" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="24" fill="none" stroke="var(--surface2)" stroke-width="7"/><circle cx="28" cy="28" r="24" fill="none" stroke="${p>=1?'var(--green)':'var(--blue)'}" stroke-width="7" stroke-linecap="round" stroke-dasharray="${c*Math.min(1,p)} ${c}" transform="rotate(-90 28 28)"/>${p>=1?`<path d="m19 28 6 6 12-12" fill="none" stroke="var(--green)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>`:''}</svg>`; }
 function nodeTitle(n){
   if(n.type!=='boss') return `${n.sec.title} · урок ${n.n}`;
+  if(['roots','suffix','verbs','ne','together','punct'].includes(n.mod.id)) return 'Босс: тренировка раздела';
   const t=trk(); if(t==='free' || (t==='oge' && n.mod.kind==='stress')) return 'Босс раздела';
-  return `Босс: формат ${TRACKS[t].name}`;
+  return 'Босс: тренировка раздела';
 }
 /* пунктирная тропинка между уроками + Аки на пустых местах */
 const DECO = ['think','point','joy','sleep','love','fire','sign','trophy'];
@@ -863,6 +1030,7 @@ addEventListener('resize', ()=>{ if(tab==='path' && !L) drawTrails(); });
 function renderPath(){
   const p = S.dayXp/S.goal; const days = S.exam ? dayDiff(today(), S.exam) : null;
   let html = `<div class="card goal">${ring(p)}<div style="flex:1"><b>${p>=1?'Цель на сегодня выполнена':'Цель на сегодня'}</b><div class="muted small">${Math.min(S.dayXp,S.goal)} / ${S.goal} XP${days!==null&&days>=0?` · до ${TRACKS[trk()].name||'экзамена'} ${days} ${plural(days,'день','дня','дней')}`:''}</div></div></div>`;
+
   const off=[0,56,72,56,0,-56,-72,-56];
   trackMods().forEach(mod=>{
     let curFound=false;
@@ -870,7 +1038,7 @@ function renderPath(){
     mod.sections.forEach(sec=>{
     const nodes = NODES.map((n,i)=>({n,i})).filter(x=>x.n.sec===sec);
     const cnt = nodes.find(x=>x.n.type==='boss').n.keys.length, unitW = mod.kind==='stress'?['слово','слова','слов']:['задание','задания','заданий'];
-    html += `<div class="section-h ${secPose(mod,sec)?'has-aki':''}" style="background:${sec.color};--c:${sec.color}" data-g="${mod.kind==='stress'?'А́':mod.id==='nn'?'нн':'при'}"><div><h2>${esc(sec.title)}</h2><p>${cnt} ${plural(cnt,...unitW)}</p></div>${secPose(mod,sec)?`<img class="sec-aki" src="${AKI[secPose(mod,sec)]}" alt="" aria-hidden="true" draggable="false">`:''}</div><div class="path" data-sec="${sec.id}">`;
+    html += `<div class="section-h ${secPose(mod,sec)?'has-aki':''}" style="background:${sec.color};--c:${sec.color}" data-g="${mod.kind==='stress'?'А́':mod.id==='nn'?'нн':mod.id==='roots'?'а/о':'при'}"><div><h2>${esc(sec.title)}</h2><p>${cnt} ${plural(cnt,...unitW)}</p></div>${secPose(mod,sec)?`<img class="sec-aki" src="${AKI[secPose(mod,sec)]}" alt="" aria-hidden="true" draggable="false">`:''}</div><div class="path" data-sec="${sec.id}">`;
     nodes.forEach(({n,i},k)=>{
       const st=(S.nodes[n.id]||{}).stars||0, un=nodeUnlocked(i); const cur = un && !st && !curFound; if(cur) curFound=true;
       const title = nodeTitle(n);
@@ -882,9 +1050,9 @@ function renderPath(){
     html += `</div>`;
     });
   });
-  const soon = {ege:['Дальше — корни и суффиксы (задания 9, 11–12) и пунктуация','Скоро. Подпишись на бота, чтобы не пропустить.'],
-    oge:['Дальше — пунктуационный анализ (задания 4–5) и словосочетания (9)','Скоро. Подпишись на бота, чтобы не пропустить.'],
-    free:['Дальше — корни, суффиксы и пунктуация','Скоро. Подпишись на бота, чтобы не пропустить.']}[trk()];
+  const soon = {ege:['Ещё предстоит добавить','Например, пунктуационный анализ текста, работа с текстом и сочинение.'],
+    oge:['Ещё предстоит добавить','Например, полноценный пунктуационный анализ, работа с текстом, изложение и сочинение.'],
+    free:['Ещё предстоит добавить','Больше упражнений и объяснений по русскому языку.']}[trk()];
   html += `<div class="card" style="text-align:center;margin-top:20px"><b>${soon[0]}</b><p class="muted small" style="margin:4px 0 0">${soon[1]}</p></div>`;
   $('#main').innerHTML = html;
   requestAnimationFrame(drawTrails);
@@ -934,7 +1102,7 @@ function renderMe(){
     <div class="field"><span id="hl">Вибрация</span><button class="switch" role="switch" aria-labelledby="hl" aria-checked="${S.haptics}" id="hap"></button></div>
     <div class="field"><span>Начать заново</span><button class="btn ghost" style="width:auto;min-height:44px;padding:0 14px;font-size:15px;color:var(--red)" id="reset">Сбросить</button></div>
    </div>
-   <p class="muted small" style="text-align:center;margin-top:18px">Аки · задания по материалам ФИПИ 2027. Не является официальным продуктом ФИПИ.</p>`;
+   <p class="muted small" style="text-align:center;margin-top:18px">Аки · тренировочные задания по русскому языку. Не является официальным продуктом ФИПИ.</p>`;
   $('#goalSel').onchange=e=>{ S.goal=+e.target.value; save(); };
   $('#exam').onchange=e=>{ S.exam=e.target.value; save(); };
   $('#trkSel').onchange=e=>{ S.track=e.target.value; save(); SFX.play('select'); toast('Путь перестроен под '+TRACKS[S.track].label); renderMe(); };
@@ -954,6 +1122,7 @@ const multiPool = it => { const p=secPool(it.sec); return p.length>=6 ? p : modP
 function makeQ(type, k, r=Math.random, pool){
   const it = ITEM[k];
   if(it.kind==='gap'){
+    if(it.mod.id==='ne'||it.mod.id==='punct') return {type:'two',w:k,opts:shuffle([{t:gapFull(it,it.ans),ok:true},{t:gapFull(it,it.alt),ok:false}],r)};
     if(type==='rows') return makeRows(r, pool||multiPool(it));
     if(type==='explain') return makeExplain(k, r, pool||multiPool(it));
     if(type==='nn') return makeNN(k, r, pool||ALLKEYS.filter(x=>ITEM[x].sec===it.sec));
@@ -974,14 +1143,15 @@ function makeRows(r, pool){ let best=null;
   return best;
 }
 function makeRows1(r, pool){
+  const rowSize=pool.length && ['verbs','suffix'].includes(ITEM[pool[0]].mod.id)?2:3;
   const used=new Set(), byL={}; pool.forEach(x=>{ const l=ITEM[x].ans; (byL[l]=byL[l]||[]).push(x); });
   const free = arr => arr.filter(x=>!used.has(x));
   const take = (arr,n) => { const a=shuffle(free(arr),r).slice(0,n); a.forEach(x=>used.add(x)); return a; };
   const nOk = 2+Math.floor(r()*2); const rows=[];
   for(let i=0;i<5;i++){ const same=i<nOk; let ks=null;
-    if(same){ const Ls=shuffle(Object.keys(byL).filter(l=>free(byL[l]).length>=3),r); if(Ls.length) ks=take(byL[Ls[0]],3); }
-    else { const Ls=shuffle(Object.keys(byL).filter(l=>free(byL[l]).length),r); if(Ls.length>=2){ const x=[...take(byL[Ls[0]],1),...take(byL[Ls[1]],1)]; ks=shuffle([...x,...take(pool,1)],r); } }
-    if(ks&&ks.length===3) rows.push({keys:ks, ok:same}); }
+    if(same){ const Ls=shuffle(Object.keys(byL).filter(l=>free(byL[l]).length>=rowSize),r); if(Ls.length) ks=take(byL[Ls[0]],rowSize); }
+    else { const Ls=shuffle(Object.keys(byL).filter(l=>free(byL[l]).length),r); if(Ls.length>=2){ const x=[...take(byL[Ls[0]],1),...take(byL[Ls[1]],1)]; ks=shuffle([...x,...take(pool,rowSize-2)],r); } }
+    if(ks&&ks.length===rowSize) rows.push({keys:ks, ok:same}); }
   const items = shuffle(rows,r).map(rw=>({keys:rw.keys, ok:rw.ok, t:rw.keys.map(x=>esc(dotted(ITEM[x]))).join(', '), rev:rw.keys.map(revealShort).join(', ')}));
   return {type:'multi', sub:'rows', w:items[0].keys[0], items};
 }
@@ -1019,7 +1189,9 @@ function buildLesson(node){
 /* ---------- урок ---------- */
 let L=null;
 function startLesson(node){
-  if(!isPlus() && S.hearts<=0) return heartsSheet();
+  if(inTG && S.last && S.streak>0 && dayDiff(S.last,today())===2 && !isPlus() && !streakCheckDone){ prepareShopState(); return toast('Проверяем защиту серии. Попробуй ещё раз'); }
+  if(S.pendingSpend){ prepareShopState(); return toast('Проверяем предыдущую покупку. Попробуй ещё раз'); }
+  if(!isPlus() && S.hearts<=0 && !(shopInfo&&shopInfo.hearts>0)) return heartsSheet();
   L = {mode:'lesson', node, qs:buildLesson(node), i:0, ok:0, done:0, combo:0, xp:0, t0:Date.now(), redo:0, wrongs:[]};
   showQ();
 }
@@ -1050,15 +1222,15 @@ function gapHTML(it){
   return `<div class="gapline enter" style="font-size:${fs}px" id="word">${esc(lead)}<span class="nw">${esc(it.wpre)}<span class="gap" id="gap" aria-label="пропуск">?</span>${esc(it.post)}</span>${esc(it.rest)}</div>`;
 }
 const MULTI = {
-  exam:   () => [trk()==='ege'?'Формат ЕГЭ · задание 4':'Проверка', 'Отметь слова, где ударная гласная выделена <u>верно</u>'],
-  rows:   () => [trk()==='ege'?'Формат ЕГЭ · задание 10':'Проверка рядов', 'Отметь ряды, где во всех словах пропущена <u>одна и та же</u> буква'],
-  nn:     () => [trk()==='ege'?'Формат ЕГЭ · задание 15':'Н или НН', 'Отметь варианты, где пишется <u>НН</u>'],
-  explain:() => [trk()==='oge'?'Формат ОГЭ · задание 6':'Объясни написание', 'Отметь варианты с <u>верным</u> объяснением написания']
+  exam:   () => [trk()==='ege'?'Тренировка ударений · ЕГЭ 4':'Проверка', 'Отметь слова, где ударная гласная выделена <u>верно</u>'],
+  rows:   () => [['roots','verbs','suffix'].includes(ITEM[L.qs[L.i].w].mod.id)?'Тренировка букв':trk()==='ege'?'Тренировка приставок · ЕГЭ 10':'Проверка рядов', 'Отметь ряды, где во всех словах пропущена <u>одна и та же</u> буква'],
+  nn:     () => [trk()==='ege'?'Тренировка Н и НН · ЕГЭ 15':'Н или НН', 'Отметь варианты, где пишется <u>НН</u>'],
+  explain:() => [trk()==='oge'?'Тренировка объяснений · ОГЭ 6':'Объясни написание', 'Отметь варианты с <u>верным</u> объяснением написания']
 };
 function showQ(){
   setBack(quitLesson);
   const q = L.qs[L.i]; const gapQ = isGapKey(q.w);
-  const intro = gapQ ? 'Поехали! Вставь пропущенную букву.' : 'Поехали! Тапай по ударной гласной.';
+  const intro = gapQ ? (['ne','together','punct'].includes(ITEM[q.w].mod.id)?'Выбери верное написание.':'Поехали! Вставь пропущенную букву.') : 'Поехали! Тапай по ударной гласной.';
   const say = L.i===0 ? (L.mode==='duel'&&L.friend!=null?`Друг набрал ${L.friend}/10. Побьёшь?`:L.mode==='review'?'Разберём ошибки!':L.mode==='duel'?'Батл! 10 заданий.':intro) : (L.combo>=3?`Комбо ×${L.combo}!`:'');
   const sayHTML = say?`<div class="mascot-row">${mascot(L.combo>=3?'fire':(L.mode==='duel'&&L.i===0?'point':'think'),72,'pop')}<div class="say">${esc(say)}</div></div>`:'';
   let body='';
@@ -1084,8 +1256,13 @@ function showQ(){
       if(!all) q.items.forEach((it,k)=>{ const sel=bs[k].getAttribute('aria-pressed')==='true'; if(sel!==it.ok) it.keys.forEach(x=>L.wrongs.push(x)); });
       answer(all, null, true); }; }
 }
-function answer(ok, btn, isExam){
+async function answer(ok, btn, isExam){
   const q = L.qs[L.i];
+  if(!ok && L.mode==='lesson' && !isPlus() && S.hearts<=0) {
+    root.querySelectorAll('.vowel,.opt,#check').forEach(b=>b.disabled=true);
+    try { await usePaidHeart(); }
+    catch(e) { if(e.status===409){delete S.pendingSpend;save();try{await refreshShop();}catch(_){} L=null;render();heartsSheet();return;} sheet(`<h2>Нужен интернет</h2><p class="muted">Проверим запасное сердечко и продолжим. Деньги повторно не спишутся.</p><button class="btn" id="retrySpend">Повторить</button><button class="btn ghost" id="leaveSpend">Выйти из урока</button>`); $('#retrySpend').onclick=()=>{closeSheet();answer(ok,btn,isExam)}; $('#leaveSpend').onclick=()=>{closeSheet();L=null;render();};return; }
+  }
   root.querySelectorAll('.vowel,.opt').forEach(b=>b.disabled=true);
   let fxEl = btn;
   if(q.type==='tap'){ const rb=root.querySelector(`.vowel[data-i="${stressIdx(q.w)}"]`); rb.classList.add('right'); rb.textContent=q.w[stressIdx(q.w)].toUpperCase(); if(!ok&&btn) btn.classList.add('wrong'); fxEl = rb; }
@@ -1110,7 +1287,7 @@ function answer(ok, btn, isExam){
   if(ok) L.wrongRow=0;
   save();
   const fb=$('#fb'); fb.className='feedback '+(ok?'ok':'bad');
-  const outOfHearts = L.mode==='lesson' && !isPlus() && S.hearts<=0 && !ok;
+  const outOfHearts = L.mode==='lesson' && !isPlus() && S.hearts<=0 && !(shopInfo&&shopInfo.hearts>0) && !ok;
   const mood = ok ? (milestone ? (L.combo>=5?'fire':'shock') : 'joy') : outOfHearts ? 'cry' : (L.wrongRow>=3 ? 'angry' : 'oops');
   const multiBad = {exam:'Зелёные — с верным ударением. Сравни с тем, что отметил.', rows:'Зелёные ряды — с одной и той же буквой. Буквы уже подставлены.', explain:'Зелёные — верные объяснения. В остальных правило не подходит к слову.', nn:'Зелёные — с НН. Буквы уже подставлены.'};
   const gapWhy = isGapKey(q.w) ? esc(hintFor(q.w)) : '';
@@ -1127,7 +1304,7 @@ function answer(ok, btn, isExam){
 }
 function bumpStreak(){
   const t=today(); let msg='';
-  if(S.last!==t){ const d=S.last?dayDiff(S.last,t):99; S.streak = (d===1 || (d===2&&isPlus())) ? S.streak+1 : 1; if(d===2&&isPlus()) msg='Заморозка спасла серию!'; S.last=t; S.bestStreak=Math.max(S.bestStreak,S.streak); }
+  if(S.last!==t){ const d=S.last?dayDiff(S.last,t):99; S.streak = (d===1 || (d===2&&(isPlus()||S.freezeFor===S.last))) ? S.streak+1 : 1; if(d===2&&(isPlus()||S.freezeFor===S.last)) msg='Заморозка спасла серию!'; S.last=t; S.bestStreak=Math.max(S.bestStreak,S.streak); }
   return msg;
 }
 function finish(){
@@ -1272,5 +1449,6 @@ applyTheme(); SFX.set(S.sound!==false);
 })();
 setInterval(()=>{ if(!L && !$('#scrim')) { const h=S.hearts; tick(); if(h!==S.hearts) render(); } }, 60000);
 setTimeout(ping, 1500);
+if(inTG) setTimeout(prepareShopState,500);
 </script>
 </body></html>
