@@ -1930,7 +1930,7 @@ function endSpeed(){
 
 /* ---------- рейтинг ---------- */
 const myId = (inTG && tg.initDataUnsafe && tg.initDataUnsafe.user && tg.initDataUnsafe.user.id) || 0;
-let topSeg = 'friends', BOARD = null;
+let topSeg = 'all', BOARD = null;
 function lbPayload(){ const wk=weekKey(); return {wk, wxp: S.wk===wk ? (S.wxp||0) : 0, xp:S.xp}; }
 async function api(path, body){ const r = await fetch(CONFIG.apiUrl.replace(/\/$/,'')+path, {method:'POST', headers:{'content-type':'text/plain'}, body: JSON.stringify({initData:tg.initData, ...lbPayload(), ...body})}); if(!r.ok) throw new Error(r.status); return r.json(); }
 const LEAGUE = ['Лисёнок','Хитрая лиса','Огненная лиса','Звёздная лиса','Кицунэ'];
@@ -1943,20 +1943,16 @@ function renderTop(){
   const main=$('#main');
   if(!inTG || !CONFIG.apiUrl){ main.innerHTML=`<div class="empty">${mascot('trophy',140,'center pop')}<h2 style="margin-top:12px">Рейтинг</h2><p class="muted">Рейтинг работает в приложении внутри Telegram.</p></div>`; return; }
   const head = `<div class="top-h">${mascot('trophy',84,'pop')}<div><h2>Рейтинг недели</h2><p class="muted small">${BOARD?`До конца недели: ${leftText(BOARD.ends)}`:'XP за уроки с понедельника'}</p></div></div>
-   <div class="seg two" role="tablist"><button aria-pressed="${topSeg==='friends'}" data-seg="friends">Друзья</button><button aria-pressed="${topSeg==='cls'}" data-seg="cls">Класс</button></div>`;
+   <div class="seg two" role="tablist"><button aria-pressed="${topSeg==='all'}" data-seg="all">Все</button><button aria-pressed="${topSeg==='friends'}" data-seg="friends">Друзья</button></div>`;
   let body='';
   if(!BOARD) body=`<div class="empty muted">Загружаю…</div>`;
+  else if(topSeg==='all'){
+    const list = Array.isArray(BOARD.all) ? BOARD.all : BOARD.friends;
+    body = lbList(list) + `<div class="card" style="margin-top:14px;text-align:center"><b>Все ученики «Аки»</b><p class="muted small" style="margin:4px 0 0">Рейтинг недели по всем: друзья, классы и те, кто занимается один. XP дают уроки, спидраны и симулятор.</p></div>`;
+  }
   else if(topSeg==='friends'){
     const solo = BOARD.friends.length<=1;
     body = lbList(BOARD.friends) + `<div class="card" style="margin-top:14px;text-align:center">${solo?`${mascot('hello',110,'center pop')}<b>Пока здесь только ты</b><p class="muted small" style="margin:4px 0 12px">Позови друзей: кто перейдёт по твоей ссылке или примет батл, появится в рейтинге.</p>`:`<p class="muted small" style="margin:0 0 12px">Друзья — те, кто перешёл по твоей ссылке или сыграл с тобой батл.</p>`}<button class="btn" id="inv">${I.share} Позвать друга</button></div>`;
-  } else if(!BOARD.cls){
-    body = `<div class="card stack"><div><b>Соревнуйся с классом</b><p class="muted small" style="margin:4px 0 0">Создай класс и отправь ссылку одноклассникам или введи код, который дал друг или учитель.</p></div>
-      <div class="field"><input id="cname" maxlength="40" placeholder="Например: Школа 15, 11Б" style="flex:1"></div><button class="btn" id="ccreate">Создать класс</button>
-      <div class="field"><input id="ccode" maxlength="6" placeholder="Код класса" style="flex:1;text-transform:uppercase;letter-spacing:.15em"></div><button class="btn ghost" id="cjoin">Вступить по коду</button></div>`;
-  } else {
-    const c=BOARD.cls;
-    body = `<div class="card row between" style="margin-bottom:12px"><div><b>${esc(c.name)}</b><div class="muted small">Код: <b style="letter-spacing:.12em">${esc(c.code)}</b> · ${c.list.length} ${plural(c.list.length,'ученик','ученика','учеников')}</div></div><button class="btn" id="cinv" style="width:auto;padding:0 16px;min-height:44px">${I.share}</button></div>`
-      + lbList(c.list) + `<button class="btn ghost" id="cleave" style="margin-top:14px;color:var(--red)">Выйти из класса</button>`;
   }
   main.innerHTML = head + `<div id="topb">${body}</div>`;
   main.querySelectorAll('[data-seg]').forEach(b=>b.onclick=()=>{ topSeg=b.dataset.seg; haptic(); renderTop(); });
