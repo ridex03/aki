@@ -556,7 +556,7 @@ body.aki-lofi-on .aki-lofi-layer{opacity:1;transform:scale(1)}
 
 </style>
 </head>
-<body><div class="aki-lofi-layer" id="akiLofiLayer" aria-hidden="true"><video id="akiLofiV1" src="assets/b3ffe60a02.mp4" muted playsinline preload="auto" disablepictureinpicture></video><video id="akiLofiV2" muted playsinline preload="auto" disablepictureinpicture></video></div><audio id="akiTtsSprite" src="assets/f7eaf2520c.ogg" preload="auto"></audio>
+<body><div class="aki-lofi-layer" id="akiLofiLayer" aria-hidden="true"><video id="akiLofiV1" src="assets/9b11729bc4.mp4" muted playsinline preload="auto" disablepictureinpicture></video><video id="akiLofiV2" muted playsinline preload="auto" disablepictureinpicture></video></div><audio id="akiTtsSprite" src="assets/f7eaf2520c.ogg" preload="auto"></audio>
 <audio id="akiPhraseSprite" preload="auto" src="assets/c72c8ac004.ogg"></audio><div class="app" id="app"></div>
 <script>window.AKI_IMG={"angry": "assets/ad498f7bcf.webp", "cry": "assets/2992b7d7ce.webp", "fire": "assets/1dc77ac337.webp", "head": "assets/d15f886a2d.webp", "joy": "assets/71af13d2ec.webp", "love": "assets/400c8f529f.webp", "oops": "assets/b5c7621e57.webp", "point": "assets/78a3de5c92.webp", "shock": "assets/2ce99ebcc2.webp", "sign": "assets/03018baa5f.webp", "sleep": "assets/cd32cedc81.webp", "think": "assets/f1eea70a2c.webp", "trophy": "assets/b3644ec610.webp", "deco1": "assets/394323c9c1.webp", "deco2": "assets/a3b99612c4.webp", "deco3": "assets/28fb555b40.webp", "deco4": "assets/13b436c846.webp", "deco5": "assets/4d9e928952.webp", "deco6": "assets/c9e317fdee.webp"};</script>
 <script>Object.assign(window.AKI_IMG,{boss:'assets/0d3f8ed936.webp',speed:'assets/9d3a4d554b.webp',duel:'assets/d8eafaf394.webp',plus:'assets/5024bb308d.webp',levelup:'assets/270381d0b5.webp',tea:'assets/0cd004bc43.webp',remind:'assets/d45a5e94fb.webp',streak:'assets/7ef1b12115.webp',p_stress:'assets/0609f5087b.webp',p_nn:'assets/934d472d6d.webp',newyear:'assets/0414e2dd1f.webp',exam:'assets/b51bfdec96.webp'});
@@ -2242,24 +2242,26 @@ html .aki-lofi-layer video,html:not([data-theme=dark]) .aki-lofi-layer video{fil
  if(!v1||!v2) return;
  let active='v1', timer=null, running=false;
  const pick=()=>active==='v2'?v2:v1;
- const CLIPS=['assets/b3ffe60a02.mp4','assets/254a40ddf0.mp4','assets/74ffd12675.mp4']; let curIdx=0, nextIdx=1;
+ const CLIPS=['assets/9b11729bc4.mp4','assets/45bf00675c.mp4','assets/2e27eae7ed.mp4']; let curIdx=0, nextIdx=1;
  let bag=[];
  function rnd(){ if(!bag.length){ bag=CLIPS.map((_,i)=>i).filter(i=>CLIPS.length<2||i!==curIdx); for(let k=bag.length-1;k>0;k--){ const j=Math.floor(Math.random()*(k+1)); [bag[k],bag[j]]=[bag[j],bag[k]]; } } return bag.shift(); }
  function prep(v,i){ if(v.getAttribute('src')!==CLIPS[i]){ v.setAttribute('src',CLIPS[i]); try{ v.load(); }catch(e){} } }
  function swap(){ const cur=pick(), nxt=(active==='v2'?v1:v2); prep(nxt,nextIdx);
   try{ nxt.currentTime=0; }catch(e){}
-  const p=nxt.play(); if(p&&p.catch)p.catch(()=>{});
-  nxt.style.opacity='1'; cur.style.opacity='0'; active=(active==='v2'?'v1':'v2'); curIdx=nextIdx; nextIdx=rnd();
+  nxt.style.transition='none'; cur.style.transition='none';
+  const show=()=>{ nxt.style.opacity='1'; cur.style.opacity='0'; };
+  const p=nxt.play(); if(p&&p.then) p.then(show).catch(show); else show();
+  active=(active==='v2'?'v1':'v2'); curIdx=nextIdx; nextIdx=rnd();
   setTimeout(()=>{if(pick()!==cur){ try{cur.pause()}catch(_){} prep(cur,nextIdx); }},1000); }
  function tick(){ if(!running) return; const cur=pick();
-  try{ if(cur.duration && cur.currentTime>=cur.duration-0.9) swap(); }catch(e){} }
+  try{ if(cur.duration && (cur.ended || cur.currentTime>=cur.duration-0.12)) swap(); }catch(e){} }
  function start(){ document.body.classList.add('aki-lofi-on');
   if(reduce){ v1.style.opacity='1'; try{ const p=v1.play(); if(p&&p.then)p.then(()=>v1.pause()); }catch(e){} return; }
   if(running) return; running=true;
   curIdx=Math.floor(Math.random()*CLIPS.length); bag=[]; prep(v1,curIdx); nextIdx=rnd(); prep(v2,nextIdx);
   v1.style.opacity='1';
   try{ v1.currentTime=0; }catch(e){}
-  const p=v1.play(); if(p&&p.catch)p.catch(()=>{}); timer=setInterval(tick,100); }
+  const p=v1.play(); if(p&&p.catch)p.catch(()=>{}); timer=setInterval(tick,40); }
  function stop(){ document.body.classList.remove('aki-lofi-on');
   setTimeout(()=>{ if(document.body.classList.contains('aki-lofi-on')) return;
    running=false; clearInterval(timer);
